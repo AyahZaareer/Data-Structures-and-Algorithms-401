@@ -10,7 +10,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 
 | Week/Day  |  Sunday       | Monday     |  Tuesday      |  Wensday      |  Thuresday      |
 |-----------|---------------|------------|---------------|---------------|-----------------|
-| Week 1    |               |            |               |               |                 |
+| Week 1    | [array-reverse]:()              |            |               |               |                 |
 | Week 2    |               |            |               |               |                 |
 | Week 3    |               |            |               |               |                 |
 | Week 4    |               |            |               |               |                 |
