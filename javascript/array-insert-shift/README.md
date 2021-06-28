@@ -7,7 +7,7 @@
 
 ## Whiteboard:
 
-![reverse](array-insert-shift.jpg.PNG)
+![reverse](array-insert-shift.jpg)
 
 
 
