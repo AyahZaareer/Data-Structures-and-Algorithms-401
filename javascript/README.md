@@ -10,7 +10,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 
 | Week/Day  |  Sunday       | Monday     |  Tuesday      |  Wensday      |  Thuresday      |
 |-----------|---------------|------------|---------------|---------------|-----------------|
-| Week 1    |  [array-reverse](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/array-reverse/README.md)             |            |               |               |                 |
+| Week 1    |  [array-reverse](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/array-reverse/README.md)             |  [array-insert-shift](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/array-insert-shift/README.md)          |               |               |                 |
 | Week 2    |               |            |               |               |                 |
 | Week 3    |               |            |               |               |                 |
 | Week 4    |               |            |               |               |                 |
