@@ -1,0 +1,24 @@
+{
+  "name": "data-structures-and-algorithms-401",
+  "version": "1.0.0",
+  "description": "See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "watch": "jest --coverage --verbose --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/issues"
+  },
+  "homepage": "https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
