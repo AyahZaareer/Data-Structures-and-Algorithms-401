@@ -16,9 +16,7 @@
 
 2.I try to imagined the ruslte.
 
-3.Drawing whitboard.
-
-4.Writting the code
+3.Writting the code
 
 ##  Efficiency:
  - space:**O(n)**
