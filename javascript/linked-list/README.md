@@ -3,11 +3,14 @@
 
 ## Singly Linked List
 
-### code challing 5:
+### code challing :
 #### methoed in linked list
 - **insert:** add nodes to the head of the linked list.
 - **includes:** check if the value exists in the linked list.
 - **toString:** return string representing the value of all nodes in linked list.
+- **append** add node to the end of list.
+- **insertBefore** add new node before spesific value in the list.
+- **insertAfter** add new node after spesific value in the list.
 
 
 ## Approach :
