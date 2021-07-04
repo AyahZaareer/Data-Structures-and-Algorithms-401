@@ -48,18 +48,54 @@ class LinkedList {
 		}
 		return result;
 	}
-	// append(value) {
-	// 	const node = new Node(value);
-	// 	if (!this.head) {
-	// 		this.head = node;
-	// 	} else {
-	// 		let currentNode = this.head;//let currentNode in the head of ll
-	// 		while (currentNode.next) {//check if the next have value not null if true let the value for the seocand node is the currentNode then if we check the next.value for the next node and found it null we stop the while 
-	// 			currentNode = currentNode.next;
-	// 		}
-	// 		currentNode.next = node;
-	// 	}
-	// }
+	append(value) {
+		const node = new Node(value);
+		if (!this.head) {
+			this.head = node;
+		} else {
+			let currentNode = this.head;//let currentNode in the head of ll
+			while (currentNode.next) {//check if the next have value not null if true let the value for the seocand node is the currentNode then if we check the next.value for the next node and found it null we stop the while 
+				currentNode = currentNode.next;
+			}
+			currentNode.next = node;
+		}
+	}
+	insertBefore(value, newValue) {
+		let newNode = new Node(newValue);
+		let current = this.head;//whecth I am wont to add new node before it
+		if (current.value === value) {
+			newNode.next = this.head;//when I found the spcefice node let the next for new node =the head for current node
+			this.head = newNode;//after found the spciface node let the head=newNode
+
+		} else {
+			while (current) {
+				if (current.next.value === value) {
+					newNode.next = current.next;
+					current.next = newNode;
+					return;
+				} else {
+					current = current.next;
+				}
+			}
+
+
+		}
+	}
+	insertAfter(value, newValue) {
+		let newNode = new Node(newValue);
+		let current = this.head;
+		while (current) {
+			if (current.value === value) {
+				newNode.next = current.value;
+				current.next = newNode;
+				return;
+			} else {
+				current = current.next;
+
+			}
+		}
+
+	}
 
 }
 
