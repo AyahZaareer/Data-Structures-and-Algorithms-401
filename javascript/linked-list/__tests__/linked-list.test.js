@@ -111,4 +111,25 @@ xdescribe('Add After ', () => {
   });
 });
 
+describe('kth from end ', () => {
+  it('return the value of kth', () => {
+
+    const ll = new LinkedLilst();//creat new ll
+    // ll.append('a');//insert node 'a' to ll
+    // ll.append('b');
+    // ll.append('c');
+
+    ll.insert('c');
+    ll.insert('b');
+    ll.insert('a');
+    expect(ll.kthFromEnd(0)).toEqual('c');
+    expect(ll.kthFromEnd(1)).toEqual('b');
+    expect(ll.kthFromEnd(2)).toEqual('a');
+    // expect(ll.kthFromEnd(7)).toEqual('Exception');
+    // expect(ll.kthFromEnd(0)).toEqual('d');
+
+
+  });
+});
+
 

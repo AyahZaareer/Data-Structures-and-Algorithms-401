@@ -5,6 +5,7 @@ const Node = require('./node');
 class LinkedList {
 	constructor() {
 		this.head = null;
+		this.length = 0;
 	}
 	insert(value) {
 		// const node = new Node(value);//create new node
@@ -20,6 +21,7 @@ class LinkedList {
 		else {
 			node.next = this.head;//the head for new node=the next for prvius node
 			this.head = node;
+			this.length++;
 
 		}
 	}
@@ -58,6 +60,7 @@ class LinkedList {
 				currentNode = currentNode.next;
 			}
 			currentNode.next = node;
+			this.length++;
 		}
 	}
 	insertBefore(value, newValue) {
@@ -66,12 +69,14 @@ class LinkedList {
 		if (current.value === value) {
 			newNode.next = this.head;//when I found the spcefice node let the next for new node =the head for current node
 			this.head = newNode;//after found the spciface node let the head=newNode
+			this.length++;
 
 		} else {
 			while (current) {
 				if (current.next.value === value) {
 					newNode.next = current.next;
 					current.next = newNode;
+					this.length++;
 					return;
 				} else {
 					current = current.next;
@@ -88,6 +93,7 @@ class LinkedList {
 			if (current.value === value) {
 				newNode.next = current.value;
 				current.next = newNode;
+				this.length++;
 				return;
 			} else {
 				current = current.next;
@@ -96,8 +102,28 @@ class LinkedList {
 		}
 
 	}
-
+	kthFromEnd(k) {
+		let node = this.head;
+		let count = this.length;//becase we have like index 0 k 0->
+		// console.log(count);
+		// while (k === count) {
+		// 	return node.value;
+		// }
+		// count--;
+		// node = node.next;
+		while (node) {
+			if (count === k) {
+				return node.value;
+			}
+			count--;
+			node = node.next;
+		}
+		return "Exception";
+	}
 }
+
+
+
 
 
 /////////////////////////////////////
