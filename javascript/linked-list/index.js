@@ -120,7 +120,41 @@ class LinkedList {
 		}
 		return "Exception";
 	}
+
+
 }
+
+function zipLists(list1, list2) {
+
+	let L1 = list1.head;
+	let L2 = list2.head;
+	let L3 = new LinkedList();
+
+	if (L1 === null && L2 === null) {
+		return L2;
+	}
+	if (L2 === null && L1 === null) {
+		return L1;
+	}
+	while (L1 || L2) {
+		if (L1 != null) {
+			L3.append(L1.value);
+			console.log('L3 first app', L3);
+			L1 = L1.next;
+			console.log('L1', L1);
+		}
+		if (L2 !== null) {
+			L3.append(L2.value);
+			console.log('L3 secand app', L3);
+			L2 = L2.next;
+			console.log('L2', L2);
+		}
+
+
+	}
+	return L3.toString();
+
+};
 
 
 
@@ -148,6 +182,6 @@ class LinkedList {
 
 // }
 
-module.exports = LinkedList;
+module.exports = { LinkedList, zipLists };
 
 

@@ -9,7 +9,7 @@ const LinkedLilst = require('..');
 //   });
 // });
 
-xdescribe('Linked List', () => {
+describe('Linked List', () => {
   it('Should Instantiate', () => {
     const ll = new LinkedLilst();
     expect(ll).toBeDefined();
@@ -18,7 +18,7 @@ xdescribe('Linked List', () => {
 });
 
 
-xdescribe('insert ', () => {
+describe('insert ', () => {
   it('Should insert to empty list', () => {
     const ll = new LinkedLilst();//creat new ll
     ll.insert('a');//insert node 'a' to ll
@@ -55,7 +55,7 @@ xdescribe('insert ', () => {
 });
 
 
-xdescribe('append to the end of the list ', () => {
+describe('append to the end of the list ', () => {
   it('Should append to empty list', () => {
     const ll = new LinkedLilst();//creat new ll
     ll.append('a');//insert node 'a' to ll
@@ -93,7 +93,7 @@ describe('Add before ', () => {
   });
 });
 
-xdescribe('Add After ', () => {
+describe('Add After ', () => {
   it('Add new node after specific value', () => {
 
     const ll = new LinkedLilst();//creat new ll
@@ -126,6 +126,33 @@ describe('kth from end ', () => {
     expect(ll.kthFromEnd(1)).toEqual('b');
     expect(ll.kthFromEnd(2)).toEqual('a');
     // expect(ll.kthFromEnd(7)).toEqual('Exception');
+    // expect(ll.kthFromEnd(0)).toEqual('d');
+
+
+  });
+});
+
+describe('zip Lists ', () => {
+  it('return the list of zip', () => {
+
+    const list1 = new LinkedLilst();//creat new ll
+    // ll.append('a');//insert node 'a' to ll
+    // ll.append('b');
+    // ll.append('c');
+
+    list1.insert('c');
+    list1.insert('b');
+    list1.insert('a');
+
+
+    let list2 = new LinkedLilst();
+    list2.insert('3');
+    list2.insert('2');
+    list2.insert('1')
+
+    L3 = zipLists(list1, list2);
+
+    expect(L3).toEqual('{a}->{1}->{b}->{2}->{c}->{3}->Null');
     // expect(ll.kthFromEnd(0)).toEqual('d');
 
 
