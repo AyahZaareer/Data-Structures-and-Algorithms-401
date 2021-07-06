@@ -12,6 +12,7 @@
 - **insertBefore** add new node before spesific value in the list.
 - **insertAfter** add new node after spesific value in the list.
 - **KFromEnd:** Return the node’s value that is k places from the tail of the linked list.
+- **zipList:** Zip the two linked lists together into one.
 
 
 ## Approach :
@@ -33,5 +34,9 @@
 
 ## Test:
  - npm test
- - npm run watch   
+ - npm run watch 
+
+
+
+ ![list](linked-list.jpg) 
 
