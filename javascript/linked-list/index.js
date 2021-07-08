@@ -2,7 +2,7 @@
 
 const Node = require('./node');
 
-class LinkedList {
+class LinkedLilst {
 	constructor() {
 		this.head = null;
 		this.length = 0;
@@ -122,13 +122,18 @@ class LinkedList {
 	}
 
 
+
+
+
+
+
 }
 
 function zipLists(list1, list2) {
 
 	let L1 = list1.head;
 	let L2 = list2.head;
-	let L3 = new LinkedList();
+	let L3 = new LinkedLilst();
 
 	if (L1 === null && L2 === null) {
 		return L2;
@@ -160,6 +165,8 @@ function zipLists(list1, list2) {
 
 
 
+
+
 /////////////////////////////////////
 //this true to check the value of head
 /////////////////////////////////////
@@ -182,6 +189,11 @@ function zipLists(list1, list2) {
 
 // }
 
-module.exports = { LinkedList, zipLists };
+module.exports = {
+	zipLists,
+	LinkedLilst,
+};
+
+
 
 
