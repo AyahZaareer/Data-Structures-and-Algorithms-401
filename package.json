@@ -20,5 +20,8 @@
   "homepage": "https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401#readme",
   "devDependencies": {
     "jest": "^27.0.6"
+  },
+  "dependencies": {
+    "supertest": "^6.1.3"
   }
 }

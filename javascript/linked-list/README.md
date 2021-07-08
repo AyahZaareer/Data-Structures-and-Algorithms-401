@@ -36,7 +36,14 @@
  - npm test
  - npm run watch 
 
+### kFromEnd():
 
+
+ ![list](kth.jpg) 
+
+ 
+
+ ## ZipList():
 
  ![list](linked-list.jpg) 
 

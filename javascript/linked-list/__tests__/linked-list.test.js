@@ -1,7 +1,8 @@
 'use strict';
 
 // Require our linked list implementation
-const LinkedLilst = require('..');
+const LinkedLilst = require('../index').LinkedLilst;
+const zipLists = require('../index').zipLists;
 
 // describe('Linked List', () => {
 //   it('works', () => {
@@ -150,13 +151,16 @@ describe('zip Lists ', () => {
     list2.insert('2');
     list2.insert('1')
 
-    L3 = zipLists(list1, list2);
 
-    expect(L3).toEqual('{a}->{1}->{b}->{2}->{c}->{3}->Null');
+
+    expect(zipLists(list1, list2)).toEqual('{a}->{1}->{b}->{2}->{c}->{3}->Null');
     // expect(ll.kthFromEnd(0)).toEqual('d');
 
 
   });
 });
+
+
+
 
 
