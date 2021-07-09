@@ -22,7 +22,6 @@ class LinkedLilst {
 			node.next = this.head;//the head for new node=the next for prvius node
 			this.head = node;
 			this.length++;
-
 		}
 	}
 	includes(value) {
@@ -144,15 +143,15 @@ function zipLists(list1, list2) {
 	while (L1 || L2) {
 		if (L1 != null) {
 			L3.append(L1.value);
-			console.log('L3 first app', L3);
+			// console.log('L3 first app', L3);
 			L1 = L1.next;
 			console.log('L1', L1);
 		}
 		if (L2 !== null) {
 			L3.append(L2.value);
-			console.log('L3 secand app', L3);
+			// console.log('L3 secand app', L3);
 			L2 = L2.next;
-			console.log('L2', L2);
+			// console.log('L2', L2);
 		}
 
 
