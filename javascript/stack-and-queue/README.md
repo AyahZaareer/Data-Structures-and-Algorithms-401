@@ -28,3 +28,10 @@ Queue
 
 ## Test:
  - npm run watch
+
+
+
+## PseudoQueue 
+ 
+
+ ![list](pesudo.jpg) 
