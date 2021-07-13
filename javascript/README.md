@@ -12,7 +12,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 |-----------|---------------|------------|---------------|---------------|-----------------|
 | Week 1    |  [array-reverse](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/array-reverse/README.md)             |  [array-insert-shift](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/array-insert-shift/README.md)          | [array-binary-search](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/array-binary-search/README.md)              |               |[liked-list](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/linked-list/README.md)                 |
 | Week 2    |               |            |               |               | [Stacks and Queues](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/stack-and-queue/README.md)                |
-| Week 3    |               |            |               |               |                 |
+| Week 3    |               |            | [Multi-bracket Validation.](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/Multi-bracket%20Validation/README.md)              |               |                 |
 | Week 4    |               |            |               |               |                 |
 | Week 5    |               |            |               |               |                 |
 | Week 6    |               |            |               |               |                 |
