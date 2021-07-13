@@ -14,7 +14,7 @@
 
   3. Drow the whitebord
 
-  3. Writting the code
+  4. Writting the code
 
 ## Test:
  - npm run watch

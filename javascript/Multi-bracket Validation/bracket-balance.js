@@ -1,13 +1,13 @@
 
-
+const Stack = require('../stack-and-queue/ stack-class ');
 function validator(str) {
-    let array = [];
+    const stack = new Stack();
     // let result;
     for (let i = 0; i < str.length; i++) {
         // let char = array[array.length - 1];
         // console.log('char', char);
         if (str[i] === '(' || str[i] === '{' || str[i] === '[') {
-            array.push(str[i]);
+            stack.push(str[i]);
         } else {
             ((str[i] === ')') || (str[i] === '}') || (str[i] === ']'))
 
@@ -18,14 +18,14 @@ function validator(str) {
                 ele = '{';
             } if (str[i] === ']') {
                 ele = '[';
-            } if (ele === array[i]) {
-                array.pop();
+            } if (ele === stack.peek()) {
+                stack.pop();
             } else {
                 return false;
             }
         };
     }
-    return array.length ? false : true;
+    return stack.isEmpty() ? true : false;
 
 }
 
