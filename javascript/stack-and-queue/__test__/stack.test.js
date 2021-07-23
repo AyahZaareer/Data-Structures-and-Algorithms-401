@@ -35,6 +35,7 @@ describe('push', () => {
         stack.push(1);
         stack.push(2);
         stack.push(3);
+        // console.log('max', stack.maxValue(5));
 
         expect(stack.top.value).toEqual(3);//the top is last element we add
         stack.pop();
