@@ -19,8 +19,8 @@ class LinkedLilst {
 			this.head = node;
 		}
 		else {
-			node.next = this.head;//the head for new node=the next for prvius node
-			this.head = node;
+			node.next = this.head;//the head for previous  node=the next for new node
+			this.head = node;//new head =new node  
 			this.length++;
 		}
 	}
@@ -127,6 +127,17 @@ class LinkedLilst {
 
 
 }
+// function mid(li) {
+// 	// let list = li.head;
+// 	let middel = Math.ceil(li.length / 2);
+// 	console.log('middel', middel);
+// 	while (li) {
+// 		if (li.length === middel) {
+// 			return li.value;
+// 		}
+// 	}
+// }
+
 
 function zipLists(list1, list2) {
 
@@ -166,6 +177,7 @@ function zipLists(list1, list2) {
 
 
 
+
 /////////////////////////////////////
 //this true to check the value of head
 /////////////////////////////////////
@@ -191,6 +203,7 @@ function zipLists(list1, list2) {
 module.exports = {
 	zipLists,
 	LinkedLilst,
+	// mid,
 };
 
 

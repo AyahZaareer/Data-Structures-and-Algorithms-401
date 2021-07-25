@@ -38,6 +38,10 @@ describe('binary tree test', () => {
     it('post order', () => {
         let result = [8, 4, 5, 2, 6, 7, 3, 1];
         expect(tree.postOrder()).toEqual(result);
+
+    })
+    it('return the max value for binary tree', () => {
+        expect(tree.maxValue()).toEqual(8);
     })
 
 })

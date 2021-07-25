@@ -47,4 +47,13 @@
  
 
 
-  ![list](BTS.jpg) 
+  ![list](BTS.jpg)
+
+
+
+
+
+
+## MaxValue for Binary Trees:
+
+![max](max.jpg)
