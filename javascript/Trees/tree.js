@@ -40,6 +40,20 @@ class BinaryTree {
         return array;
 
     }
+    maxValue() {
+        let max = this.root.val;
+        let checkMax = (node) => {
+            if (node.val > max) {
+                max = node.val;
+            } if (node.right) {
+                checkMax(node.right);
+            } if (node.left) {
+                checkMax(node.left);
+            }
+        }
+        checkMax(this.root);
+        return max;
+    }
 
 }
 

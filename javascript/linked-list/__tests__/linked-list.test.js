@@ -3,12 +3,9 @@
 // Require our linked list implementation
 const LinkedLilst = require('../index').LinkedLilst;
 const zipLists = require('../index').zipLists;
+const mid = require('../index').mid;
 
-// describe('Linked List', () => {
-//   it('works', () => {
-//     expect(true).toBeTruthy();
-//   });
-// });
+
 
 describe('Linked List', () => {
   it('Should Instantiate', () => {
@@ -53,6 +50,19 @@ describe('insert ', () => {
     // expect(ll.includes('d')).toBeTruthy();
 
   });
+  // it('return midlle', () => {
+  //   const ll = new LinkedLilst();//creat new ll
+  //   ll.insert('e');
+  //   ll.insert('d');
+  //   ll.insert('c');
+  //   ll.insert('b');
+  //   ll.insert('a');
+
+  //   expect(mid(ll)).toEqual('b');
+
+  //   // expect(ll.includes('d')).toBeTruthy();
+
+  // });
 });
 
 
