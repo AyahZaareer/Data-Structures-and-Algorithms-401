@@ -1,7 +1,8 @@
 'use strict';
 const Node = require('./node');
+const Queue = require('../stack-and-queue/queue');
 class BinaryTree {
-    constructor(root) {
+    constructor(root = null) {
         this.root = root;
     }
     //root left right
@@ -54,6 +55,52 @@ class BinaryTree {
         checkMax(this.root);
         return max;
     }
+
+    // breadthFirst() {
+    //     if (this.root === null) {
+    //         return "it's an empty";
+    //     }
+    //     let output = [];
+    //     let queue = new Queue();
+    //     queue.enqueue(this.root);
+    //     // console.log('queue aaa', queue);
+    //     while (queue.peek()) {
+    //         console.log('queue aaa', queue.peek());
+    //         let frontA = queue.dequeue();
+    //         // console.log('front:----', frontA);
+    //         output.push(frontA.val);
+    //         if (frontA.left) queue.enqueue(frontA.left);
+
+
+    //         if (frontA.right) queue.enqueue(frontA.right);
+
+    //     }
+    //     return output;
+    // }
+    breadthFirst() {
+        if (this.root === null) {
+            return null;
+        }
+        let result = [];
+        let traverse = (node, cb) => {
+            let current = [node];
+            while (current.length) {
+                let next = [];
+                current.forEach((val) => {
+                    cb(val);
+                    if (val.left) next.push(val.left);
+                    if (val.right) next.push(val.right);
+                });
+                current = next;
+            }
+        };
+        traverse(this.root, function (node) {
+            result.push(node.val);
+            console.log('result', result);
+        })
+        return result;
+    }
+
 
 }
 

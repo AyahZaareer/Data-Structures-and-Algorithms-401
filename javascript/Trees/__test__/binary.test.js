@@ -43,6 +43,10 @@ describe('binary tree test', () => {
     it('return the max value for binary tree', () => {
         expect(tree.maxValue()).toEqual(8);
     })
+    it('breadth first', () => {
+        let test = [1, 2, 3, 4, 5, 6, 7, 8];
+        expect(tree.breadthFirst()).toEqual(test);
+    })
 
 })
 
