@@ -54,13 +54,19 @@
 
 
 
-## MaxValue for Binary Trees:
+## MaxValue for Binary Trees :
 
 ![max](max.jpg)
 
 
 
 
-## BreadthFirst (list)
+## BreadthFirst (list) : 
 
 ![m](bf.jpg)
+
+
+
+## FizzBuzz () :
+
+![m](fizzBuzz.jpg)
