@@ -101,6 +101,29 @@ class BinaryTree {
         return result;
     }
 
+    // fizzBuzz() {
+    //     let Tree = this;
+    //     console.log('treeeeeeeeeeeeeee', Tree);
+    //     let trevers = (node) => {
+    //         if (node.val % 3 === 0 && node.val % 5 === 0) {
+    //             node.val = 'FizzBuzz';
+    //         } else if (node.val % 3 === 0) {
+    //             node.val = 'Fizz';
+    //         } else if (node.val % 5 === 0) {
+    //             node.val = 'Buzz';
+    //         } else {
+    //             node.val = `${node.val}`;
+    //         }
+    //         for (let i in node.addNode) {
+    //             trevers(node.addNode[i]);
+    //         }
+
+    //     }
+    //     trevers(Tree.root);
+    //     return Tree;
+    // }
+
+
 
 }
 
@@ -169,5 +192,8 @@ class BinaryTreeSearch {
         }
     }
 }
+
+
+
 
 module.exports = { BinaryTree, BinaryTreeSearch };
