@@ -23,3 +23,15 @@
      - Arguments: key
      - Returns: Index in the collection for that key
      - Time:O(n) , Space:O(1)
+
+## Approach :
+1.Understand the porblem.
+
+2.I try to imagined the ruslte.
+
+3.Writting the code
+
+
+## Test:
+  - npm test
+  - npm run watch
