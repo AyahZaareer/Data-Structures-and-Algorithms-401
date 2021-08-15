@@ -45,7 +45,7 @@ class K_aryTree {
             } else {
                 node.val = `${node.value}`;
             }
-            for (let i = 0; i < node.addNode; i++) {
+            for (let i = 0; i < node.addNode.length; i++) {
                 trevers(node.addNode[i]);
             }
 

@@ -24,6 +24,13 @@
      - Returns: Index in the collection for that key
      - Time:O(n) , Space:O(1)
 
+
+
+## challenge 31:
+### repeatedWords:
+
+![m](repeat.jpg)
+
 ## Approach :
 1.Understand the porblem.
 
