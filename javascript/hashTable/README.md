@@ -31,6 +31,11 @@
 
 ![m](repeat.jpg)
 
+## challenge 3:
+### hashmap-tree-intersection:
+
+![m](intersection.jpg)
+
 ## Approach :
 1.Understand the porblem.
 
