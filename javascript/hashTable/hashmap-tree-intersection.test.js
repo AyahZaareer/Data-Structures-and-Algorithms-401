@@ -1,16 +1,16 @@
 const intersection = require('./hashmap-tree-intersection');
 const BinarayTree = require('../Trees/tree').BinaryTree;
-const Node = require('./hash').Node;
+const Node = require('../Trees/node');
 
 
 describe('tree intersection ', () => {
     it('return correct result', () => {
         const tree1 = new BinarayTree();
         tree1.root = new Node(100);
-        tree1.root.left = new Node(140);
+        tree1.root.left = new Node(141);
         tree1.root.left.left = new Node(140);
         tree1.root.left.right = new Node(105);
-        tree1.root.left.right.left = new Node(200);
+        tree1.root.left.right.left = new Node(201);
         tree1.root.left.right.right = new Node(200);
 
         tree1.root.right = new Node(160);
@@ -39,6 +39,8 @@ describe('tree intersection ', () => {
         console.log('common', testArr);
 
 
-        expect(testArr).toEqual([100, 105, 160, 300, 50, 350]);
+        expect(testArr).toEqual([100, 105,200, 160, 300, 50, 350]);
     })
 })
+
+
