@@ -16,7 +16,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 | Week 4    |               |            |               |               |                 |
 | Week 5    |               |            |               |               |                 |
 | Week 6    |               |            |               |               | [hashTable](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/hashTable/README.md)                |
-| Week 7    |               |            |               |               |                 |
+| Week 7    |               |            |               |               |[Graph](https://github.com/AyahZaareer/Data-Structures-and-Algorithms-401/blob/main/javascript/graph/README.md)                 |
 | Week 8    |               |            |               |               |                 |
 | Week 9    |               |            |               |               |                 |
 | Week 10   |               |            |               |               |                 |
