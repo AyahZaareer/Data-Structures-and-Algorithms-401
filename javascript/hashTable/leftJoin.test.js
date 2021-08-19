@@ -3,8 +3,8 @@ const leftJoin = require('./Left-Joins ');
 
 describe('Left-Join test', () => {
     it('correct left join', () => {
-        let table1 = new HashTable(20);
-        let table2 = new HashTable(20);
+        let table1 = new HashTable(16);
+        let table2 = new HashTable(16);
 
         table1.add('fond', 'enamour');
         table1.add('wrath', 'anger');

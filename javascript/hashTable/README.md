@@ -31,10 +31,15 @@
 
 ![m](repeat.jpg)
 
-## challenge 3:
+## challenge 32:
 ### hashmap-tree-intersection:
 
 ![m](intersection.jpg)
+
+## challenge 33:
+### hashmap-Left-Join:
+
+![m](leftJoin.jpg)
 
 ## Approach :
 1.Understand the porblem.
