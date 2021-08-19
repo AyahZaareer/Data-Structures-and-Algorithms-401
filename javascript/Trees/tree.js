@@ -122,7 +122,23 @@ class BinaryTree {
     //     trevers(Tree.root);
     //     return Tree;
     // }
+    // height(node) {
+    //     if (!node) return 0;
+    //     let leftH = this.height(node.left);
+    //     let rightH = this.height(node.right);
 
+    //     return Math.max(leftH, rightH) + 1;
+
+    // }
+
+    // height(node) {
+    //     let helper = (node, level) => {
+
+    //         if (!node) return level;
+    //         return Math.max(helper(node.left, level + 1), helper(node.right, level + 1))
+    //     }
+    //     return helper(node, 0);
+    // }
 
 
 }
