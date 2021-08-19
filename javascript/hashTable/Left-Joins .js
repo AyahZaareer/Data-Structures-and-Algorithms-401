@@ -1,13 +1,13 @@
 function leftJoin(table1, table2) {
     let arr = [];
-    for (let i = 0; i < table1.storage.length; i++) {
+    for (let i = 0; i <= table1.storage.length - 1; i++) {
         if (table1.storage[i]) {
             // console.log('leftKey', Object.keys[0])
             let key = [Object.keys(table1.storage[i].head.value)[0]][0];
             let value = [Object.values(table1.storage[i].head.value)[0]][0];
 
-            console.log('key-lj', key);
-            console.log('value-jl', value);
+            // console.log('key-lj', key);
+            // console.log('value-jl', value);
             arr.push([key, value]);
             console.log('arr', arr);
             console.log('current', table1.storage)
@@ -35,7 +35,7 @@ function leftJoin(table1, table2) {
 
     }
 
-    for (let j = 0; j < arr.length; j++) {
+    for (let j = 0; j <= arr.length - 1; j++) {
         let leftTable = table2.get(arr[j][0]);
         arr[j].push(leftTable);
 

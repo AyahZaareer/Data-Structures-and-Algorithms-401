@@ -1,3 +1,5 @@
+const LinkedList = require('../linked-list/index').LinkedLilst;
+
 class Node {
     constructor(value) {
         this.value = value;
@@ -5,21 +7,24 @@ class Node {
     }
 }
 
-class LinkedList {
-    constructor() {
-        this.head = null;
-    }
+// class LinkedList {
+//     constructor() {
+//         this.head = null;
+//         this.length = 0;
+//     }
 
-    perpend(value) {
-        const node = new Node(value);
-        if (!this.head) {
-            this.head = node;
-        } else {
-            node.next = this.head;
-            this.head = node;
-        }
-    }
-}
+//     // perpend(value) {
+//     //     const node = new Node(value);
+//     //     if (!this.head) {
+//     //         this.head = node;
+//     //     } else {
+//     //         node.next = this.head;
+//     //         this.head = node;
+//     //     }
+//     // }
+
+//    
+// }
 
 class Hashmap {
     constructor(size) {
@@ -28,24 +33,22 @@ class Hashmap {
     }
 
     hash(key) {
-        const sumCkarCode = key.split('').reduce((acc, char) => {
-            return acc + char.charCodeAt(0);
+        const sumCkarCode = key.split('').reduce((acc, val) => {
+            return acc * val.charCodeAt(0);
         }, 0);
-        const hashKey = (sumCkarCode * 19) % this.size;
-        return hashKey;
+
+        return (sumCkarCode * 19) % this.size;
+
     }
 
     add(key, value) {
         const hash = this.hash(key);
         console.log('key', hash);
         if (!this.storage[hash]) {
-            const ll = new LinkedList();
-            ll.perpend({ [key]: value });
-            this.storage[hash] = ll;
-
-        } else {
-            this.storage[hash].perpend({ [key]: value });
+            this.storage[hash] = new LinkedList();
         }
+        this.storage[hash].append({ [key]: value });
+
     }
 
     contains(key) {
@@ -64,11 +67,13 @@ class Hashmap {
         if (this.contains(key)) {
             if (this.storage[hash].head) {
                 let current = this.storage[hash].head;
-                while (current) {
+                if (Object.keys(current.value)[0] === key) return current.value[key];
+                while (current.next) {
+                    current = current.next;
                     if (Object.keys(current.value)[0] === key) {
                         return current.value[key];
                     }
-                    current = current.next;
+                    // current = current.next;
                 }
             }
 
@@ -79,14 +84,14 @@ class Hashmap {
 }
 
 
-const hashmap = new Hashmap(500);
-hashmap.add('name','Ayah');
-hashmap.add('one', 'test');
-hashmap.add('neo', 'test1');
-let check = hashmap.contains('name');
-console.log(check);
+// const hashmap = new Hashmap(500);
+// hashmap.add('name', 'Ayah');
+// hashmap.add('one', 'test');
+// hashmap.add('neo', 'test1');
+// let check = hashmap.contains('name');
+// console.log(check);
 
-console.table(hashmap.storage);
-console.table(hashmap.storage[423].head);
+// console.table(hashmap.storage);
+// console.table(hashmap.storage[423].head);
 
-module.exports={Hashmap,Node,LinkedList}
+module.exports = { Hashmap, Node }
